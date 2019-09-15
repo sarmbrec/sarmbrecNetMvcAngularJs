@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/sarmbrec.css",
+    "inputFile": "Content/sarmbrec.scss"
+  },
+  {
+    "outputFile": "Content/bootstrapSASS/bootstrap.css",
+    "inputFile": "Content/bootstrapSASS/bootstrap.scss"
+  }
+]
