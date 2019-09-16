@@ -19,11 +19,23 @@ namespace sarmbrecNetMvcAngularJs
             //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
             //            "~/Scripts/modernizr-*"));
 
+
+            bundles.Add(new ScriptBundle("~/bundles/material-design-lite").Include(
+                      "~/Scripts/material-design-lite/material-min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap3/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularJS").Include(
                       "~/Scripts/angularjs/angular.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/phoneList").Include(
+                      "~/Scripts/phoneApp/phoneList.js",
+                      "~/Scripts/phoneApp/app.js"));
+
+
+            //bundles.Add(new StyleBundle("~/Content/material-design-lite").Include(
+            //        "~/Content/material-design-lite/material.min.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                     //"~/Content/bootstrap.css",

@@ -1,37 +1,241 @@
 ﻿
 
+/**/
+
 @import "bootstrapSASS/bootstrap.scss";
-@import "app/sarmbrec-bootstrap-theme.scss";
+@import "animate/animate.min.css";
+@import "brand/_sarmbrec-brand.scss";
+/*@import "themes/_sarmbrec-bootstrap4-theme.scss";*/
+
+/*@import "app/sarmbrec-bootstrap4-theme.scss";
+@import "bootstrap4themes/_bootstrap4theme.scss";*/
 
 
 /*@import "bootstrapCSS/bootstrap.css";
 @import "bootstrapCSS/bootstrap-theme.css";*/
 
+/*.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}*/
 
 
+
+.card-columns {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+
+    @include media-breakpoint-up(xs) {
+        column-count: 1;
+    }
+
+    @include media-breakpoint-up(sm) {
+        column-count: 1;
+    }
+
+    @include media-breakpoint-up(md) {
+        column-count: 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+        column-count: 3;
+    }
+
+    @include media-breakpoint-up(xl) {
+        column-count: 3;
+    }
+}
+
+
+    /*Angular template show fix*/
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+    }
 
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    /* Set padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column */
+    .dl-horizontal dt {
+        white-space: normal;
+    }
+    /* Set width on the form input elements since they're 100% wide by default */
+    input,
+    select,
+    textarea {
+        max-width: 280px;
+    }
+    /*sections*/
+    section#section-jumbotron {
+        .jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: rgba(233, 236, 239, .5);
+            border-radius: .3rem;
+            height: 65vh;
+            /*background-image: url('images/backgrounds/fire_place_edit0.jpg');
+    background-image: url('images/backgrounds/20161230_112955.jpg');
+    background-image: url('images/backgrounds/20170426_215830.jpg');
+    background-image: url('images/backgrounds/20170827_182626.jpg');
+            background-image: url('images/backgrounds/20171208_155352.jpg');
+    background-image: url('images/backgrounds/20170902_184346.jpg');
+            background-attachment: fixed;
+            background-position: top left;
+            background-size: 85% 40%;
+            background-repeat: no-repeat;*/
+        }
+    }
+    /*articles*/
+    article#knowledge-base {
+        /*background-image: url('images/backgrounds/fire_place_edit0.jpg');
+        background-attachment: fixed;
+        background-position: top right;
+        background-size: cover;*/
+        section#section-knowledge-base {
+
+            &.card {
+                background-color: rgba(233, 236, 239, .75);
+
+                .card-title {
+                    font-size: 1rem;
+                }
+
+                .card-subtitle {
+                    font-size: .8rem;
+                }
+
+                .card-text {
+                    font-size: .9rem;
+                }
+
+                .card-body{
+                    ul{
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0 .5rem;
+                        font-size: .8rem;
+                        li{
+                            a{
+                                text-decoration: underline;
+                                &:hover,
+                                &:active,
+                                &:focus{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+
+
+
+
+
+
+    /* installed brand fonts*/
+    /*@font-face {
+    font-family: 'Lato-Bold';
+    src: url(/assets/fonts/Lato-Bold.ttf) format("truetype");
+    font-weight: 300;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(/assets/fonts/Lato-Light.ttf) format("truetype");
+    font-weight: 300;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(/assets/fonts/Lato-Regular.ttf) format("truetype");
+    font-weight: 300;
 }
 
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url(/assets/fonts/Lato-Thin.ttf) format("truetype");
+    font-weight: 300;
+}*/
+    /*reset*/
+    /** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+    /*grid mobile first*/
+    /*.container {
+    min-width: 320px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    display: block;
+    width: 96%;
+    margin: 2%;
+}*/
+    /*brand the body*/
+    /*body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 59px;
+    background-color: #f2f1ef;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}*/
+    /* Extra Small Devices, Phones */
+    /*@media only screen and (min-width : 480px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .col {
+        display: inline-block;
+        width: 46%;
+        margin: 0 2% 2% 0;
+    }
+
+    .col:nth-child(even) {
+        margin-right: 0;
+    }
+}*/
+    /* Medium Devices, Desktops */
+    /*@media only screen and (min-width : 992px) {
+    .col {
+        width: 23%;
+    }
+
+    .col:nth-child(even) {
+        margin-right: 2%;
+    }
+
+    .col:last-child {
+        margin-right: 0;
+    }
+}*/
