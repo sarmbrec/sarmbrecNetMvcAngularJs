@@ -6,6 +6,10 @@
         component('phoneList', {            
             templateUrl: '/Scripts/phoneApp/phone-list/phone-list.template.html',
             controller: function PhoneListController() {
+
+                //TODO: make ajax request
+
+
                 this.phones = [
                     {
                         "category": "Front end technology",

@@ -390,6 +390,7 @@
     <Content Include="Content\themes\sarmbrec-bootstrap4-theme - Copy.scss" />
     <Content Include="Content\json\knowledge-base.json" />
     <Content Include="Content\brand\_sarmbrec-brand.scss" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
