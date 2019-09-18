@@ -24,6 +24,10 @@
                         "text": "A software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.",
                         "links": [
                             {
+                                "title": "Semantic HTML Validator",
+                                "url": "https://validator.w3.org/nu/#textarea"
+                            },
+                            {
                                 "title": "Semantic HTML Guide",
                                 "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
                             },

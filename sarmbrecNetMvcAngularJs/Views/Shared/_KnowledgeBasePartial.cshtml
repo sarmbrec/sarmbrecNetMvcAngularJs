@@ -6,24 +6,13 @@ else
 {
 }
 
-<article id="article-knowledge-base" ng-app="phonecatApp">
+<article id="article-knowledge-base">
 
-    <h1>Knowledge base@*<span class="badge badge-pill badge-primary">{{phones.length}}</span>*@</h1>
-
-    <div class="card-columns ng-cloak">
-
-        <!-- Use a custom component to render a list of phones -->
-        <phone-list></phone-list>
-
-        @*<section id="section-knowledge-base" class="card shadow-sm animated fadeInUp slower delay-2s " ng-repeat="phone in phones">
-        <div class="card-body">
-        <h3 class="card-title">{{phone.title}}</h3>
-        <h6 class="card-subtitle mb-2 text-muted">{{phone.subTitle}}</h6>
-        <p class="card-text">{{phone.text}}</p>
-        <ul>
-            <li class="" ng-repeat="link in phone.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>
-        </ul>*@
-    </div>
-        </section>
+    <h1>Knowledge base</h1>
+    <div>
+        <div class="card-columns data-ng-cloak" data-ng-app="phonecatApp">
+            <!-- Use a custom component to render a list of phones -->
+            <phone-list></phone-list>
+        </div>
     </div>
 </article>
