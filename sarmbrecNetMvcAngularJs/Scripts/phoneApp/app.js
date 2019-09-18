@@ -1,13 +1,15 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('app', [
+    // set phonecatApp
+    angular.module('phonecatApp', []);
+
+    // get phonecatApp
+    //angular.module('app', [
         // Angular modules 
-        'ngRoute'
-
+        //'ngRoute'
         // Custom modules 
-
         // 3rd Party Modules
+    //]);
 
-    ]);
 })();

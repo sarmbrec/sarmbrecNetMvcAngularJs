@@ -191,7 +191,7 @@
     <Content Include="Content\images\backgrounds\20171208_155352.jpg" />
     <Content Include="Content\images\backgrounds\fire_place_edit0.jpg" />
     <Content Include="Scripts\phoneApp\app.js" />
-    <Content Include="Scripts\phoneApp\phoneList.js" />
+    <Content Include="Scripts\phoneApp\phone-list.component.js" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.css" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrapCSS\bootstrap.css" />
@@ -1212,6 +1212,7 @@
     <Content Include="Views\Shared\_KnowledgeBasePartial.cshtml" />
     <Content Include="Views\Shared\_GettingStartedPartial.cshtml" />
     <Content Include="Views\Shared\_JumboTronPartial.cshtml" />
+    <Content Include="Views\Shared\_CarouselPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

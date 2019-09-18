@@ -1,4 +1,9 @@
-﻿/*! sarmbrec branding */
+﻿/*! Import Bootstrap 4 variables */
+@import "../bootstrapSASS/_functions.scss";
+@import "../bootstrapSASS/_variables.scss";
+@import "../bootstrapSASS/_mixins.scss";
+
+/*! sarmbrec branding */
 $black: rgb(000,000,000);
 
 body{
@@ -26,9 +31,29 @@ footer {
 
 
 
+@include media-breakpoint-up(xs) {
+    
+}
 
+@include media-breakpoint-up(sm) {
+    
+}
 
+@include media-breakpoint-up(md) {
+    
+}
 
+@include media-breakpoint-up(lg) {
+    
+}
+
+@include media-breakpoint-up(xl) {
+    
+}
+
+@include media-breakpoint-between(md, xl) {
+    
+}
 
 
 
