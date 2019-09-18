@@ -206,10 +206,10 @@
     <Content Include="Content\images\backgrounds\IMG_2994.jpg" />
     <Content Include="Content\images\backgrounds\IMG_3350.JPG" />
     <Content Include="Content\images\backgrounds\IMG_3351.JPG" />
-    <Content Include="Scripts\angularJsApp\phone-list\phone-list.module.js" />
+    <Content Include="Scripts\angularJsApp\knowledge-base\knowledge-base.module.js" />
     <Content Include="Scripts\angularJsApp\app.module.js" />
     <Content Include="Scripts\angularJsApp\app.js" />
-    <Content Include="Scripts\angularJsApp\phone-list\phone-list.component.js" />
+    <Content Include="Scripts\angularJsApp\knowledge-base\knowledge-base.component.js" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.css" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrapCSS\bootstrap.css" />
@@ -1160,7 +1160,7 @@
     <Content Include="Content\material-design-lite\material.min.css" />
     <Content Include="Content\material-design-lite\material.min.js" />
     <Content Include="Scripts\modernizer\modernizr-2.8.3.js" />
-    <Content Include="Scripts\angularJsApp\phone-list\phone-list.template.html" />
+    <Content Include="Scripts\angularJsApp\knowledge-base\knowledge-base.template.html" />
     <Content Include="Scripts\popperjs\popper-utils.js" />
     <Content Include="Scripts\popperjs\popper-utils.min.js" />
     <Content Include="Scripts\popperjs\popper.js" />

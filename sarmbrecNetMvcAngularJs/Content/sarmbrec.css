@@ -1,5 +1,4 @@
-﻿/**/
-/*!
+﻿/*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -7118,50 +7117,13 @@ $breadcrumb-active-color: $gray-500;*/
 /*.navbar-dark.bg-primary {
     background-color: #111111 !important;
 }*/
-/*@import "themes/_sarmbrec-bootstrap4-theme.scss";*/
-/*@import "app/sarmbrec-bootstrap4-theme.scss";
-@import "bootstrap4themes/_bootstrap4theme.scss";*/
-/*@import "bootstrapCSS/bootstrap.css";
-@import "bootstrapCSS/bootstrap-theme.css";*/
-/*.card-columns {
-    @include media-breakpoint-only(lg) {
-        column-count: 4;
-    }
-
-    @include media-breakpoint-only(xl) {
-        column-count: 5;
-    }
-}*/
-.card-columns {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  column-count: 1; }
-  @media (min-width: 576px) {
-    .card-columns {
-      column-count: 1; } }
-  @media (min-width: 768px) {
-    .card-columns {
-      column-count: 2; } }
-  @media (min-width: 992px) {
-    .card-columns {
-      column-count: 3; } }
-  @media (min-width: 1200px) {
-    .card-columns {
-      column-count: 3; } }
-
-/*Angular template show fix*/
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important; }
-
 body {
   padding-top: 55px;
   /* Set padding to keep content from hitting the edges */
   /* Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column */
   /* Set width on the form input elements since they're 100% wide by default */
-  /*articles*/
-  /*articles*/ }
+  /*Angular template show fix*/
+  /*articles of content*/ }
   body .body-content {
     padding-left: 15px;
     padding-right: 15px; }
@@ -7171,6 +7133,45 @@ body {
   body select,
   body textarea {
     max-width: 280px; }
+  body .card-columns {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    column-count: 1; }
+    @media (min-width: 576px) {
+      body .card-columns {
+        column-count: 1; } }
+    @media (min-width: 768px) {
+      body .card-columns {
+        column-count: 2; } }
+    @media (min-width: 992px) {
+      body .card-columns {
+        column-count: 3; } }
+    @media (min-width: 1200px) {
+      body .card-columns {
+        column-count: 3; } }
+  body [ng\:cloak], body [ng-cloak], body [data-ng-cloak], body [x-ng-cloak], body .ng-cloak, body .x-ng-cloak {
+    display: none !important; }
+  body article#article-carousel {
+    background-color: rgba(233, 236, 239, 0.5);
+    background-image: url("images/backgrounds/fire_place_edit0.jpg");
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: cover; }
+    body article#article-carousel section#section-carousel {
+      margin-bottom: 1.5rem; }
+      body article#article-carousel section#section-carousel .carousel-inner {
+        height: 65vh;
+        width: 100vw; }
+        body article#article-carousel section#section-carousel .carousel-inner .carousel-item {
+          /*height: 100vh;
+                    width: 100vw;
+                    overflow: hidden;*/ }
+          body article#article-carousel section#section-carousel .carousel-inner .carousel-item > img {
+            height: 75vh;
+            width: 100vw;
+            opacity: .9; }
   body article#article-jumbotron section#section-jumbotron .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -7211,25 +7212,6 @@ body {
           text-decoration: underline; }
           body article#article-knowledge-base section#section-knowledge-base.card .card-body ul li a:hover, body article#article-knowledge-base section#section-knowledge-base.card .card-body ul li a:active, body article#article-knowledge-base section#section-knowledge-base.card .card-body ul li a:focus {
             text-decoration: none; }
-  body article#article-carousel {
-    background-color: rgba(233, 236, 239, 0.5);
-    /*background-image: url('images/backgrounds/fire_place_edit0.jpg');
-        background-attachment: fixed;
-        background-position: top right;
-        background-size: cover;*/ }
-    body article#article-carousel section#section-carousel {
-      margin-bottom: 1.5rem; }
-      body article#article-carousel section#section-carousel .carousel-inner {
-        height: 65vh;
-        width: 100vw; }
-        body article#article-carousel section#section-carousel .carousel-inner .carousel-item {
-          /*height: 100vh;
-                    width: 100vw;
-                    overflow: hidden;*/ }
-          body article#article-carousel section#section-carousel .carousel-inner .carousel-item > img {
-            height: 65vh;
-            width: 100vw;
-            opacity: .9; }
 
 /* installed brand fonts*/
 /*@font-face {

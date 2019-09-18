@@ -1,10 +1,10 @@
 ﻿(function () {
     'use strict';
 
-    // Define the `phonecatApp` module
-    angular.module('phonecatApp', [
-        // ...which depends on the `phoneList` module
-        'phoneList'
+    // Define the `knowledgeBaseApp` module
+    angular.module('knowledgeBaseApp', [
+        // ...which depends on the `knowledgeBase` module
+        'knowledgeBase'
     ]);
 
 

@@ -1,10 +1,10 @@
 ﻿(function () {
     //'use strict';
 
-    // set phonecatApp
-    //angular.module('phonecatApp', []);
+    // set knowledgeBaseApp
+    //angular.module('knowledgeBaseApp', []);
 
-    // get phonecatApp
+    // get knowledgeBaseAppApp
     //angular.module('app', [
         // Angular modules 
         //'ngRoute'
