@@ -30,9 +30,10 @@ namespace sarmbrecNetMvcAngularJs
                       "~/Scripts/angularjs/angular.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/phoneList").Include(
-                      "~/Scripts/phoneApp/app.js",
-                      //"~/Scripts/phoneApp/app.js," +
-                      "~/Scripts/phoneApp/phone-list.component.js"));
+                "~/Scripts/phoneApp/app.module.js",
+                "~/Scripts/phoneApp/phone-list/phone-list.module.js",
+                "~/Scripts/phoneApp/phone-list/phone-list.component.js"
+            ));
 
 
             //bundles.Add(new StyleBundle("~/Content/material-design-lite").Include(

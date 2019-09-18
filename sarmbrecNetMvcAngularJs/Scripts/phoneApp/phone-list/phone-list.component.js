@@ -2,19 +2,9 @@
     'use strict';
     // Register `phoneList` component, along with its associated controller and template
     angular.
-        module('phonecatApp').
-        component('phoneList', {
-            template:
-                '<section id="section-knowledge-base" class="card shadow-sm animated fadeInUp slower delay-2s " ng-repeat="phone in $ctrl.phones">' +
-                '<div class="card-body">' +
-                '<h3 class="card-title">{{phone.title}}</h3>' +
-                '<h6 class="card-subtitle mb-2 text-muted">{{phone.subTitle}}</h6>' +
-                '<p class="card-text">{{phone.text}}</p>' +
-                '<ul>' +
-                '    <li class="" ng-repeat="link in phone.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>' +
-                '</ul>' +
-                '</div>' +
-                '</section>',
+        module('phoneList').
+        component('phoneList', {            
+            templateUrl: '/Scripts/phoneApp/phone-list/phone-list.template.html',
             controller: function PhoneListController() {
                 this.phones = [
                     {

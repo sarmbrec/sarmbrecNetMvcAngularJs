@@ -190,8 +190,10 @@
     <Content Include="Content\images\backgrounds\20170902_184346.jpg" />
     <Content Include="Content\images\backgrounds\20171208_155352.jpg" />
     <Content Include="Content\images\backgrounds\fire_place_edit0.jpg" />
+    <Content Include="Scripts\phoneApp\phone-list\phone-list.module.js" />
+    <Content Include="Scripts\phoneApp\app.module.js" />
     <Content Include="Scripts\phoneApp\app.js" />
-    <Content Include="Scripts\phoneApp\phone-list.component.js" />
+    <Content Include="Scripts\phoneApp\phone-list\phone-list.component.js" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.css" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrapCSS\bootstrap.css" />
@@ -1141,6 +1143,7 @@
     <Content Include="Content\material-design-lite\material.min.css" />
     <Content Include="Content\material-design-lite\material.min.js" />
     <Content Include="Scripts\modernizer\modernizr-2.8.3.js" />
+    <Content Include="Scripts\phoneApp\phone-list\phone-list.template.html" />
     <Content Include="Scripts\popperjs\popper-utils.js" />
     <Content Include="Scripts\popperjs\popper-utils.min.js" />
     <Content Include="Scripts\popperjs\popper.js" />

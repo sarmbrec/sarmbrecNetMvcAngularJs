@@ -1,8 +1,8 @@
 ﻿(function () {
-    'use strict';
+    //'use strict';
 
     // set phonecatApp
-    angular.module('phonecatApp', []);
+    //angular.module('phonecatApp', []);
 
     // get phonecatApp
     //angular.module('app', [
