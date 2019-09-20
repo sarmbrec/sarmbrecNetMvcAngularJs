@@ -35,6 +35,12 @@ namespace sarmbrecNetMvcAngularJs
                 "~/Scripts/angularJsApp/knowledge-base/knowledge-base.component.js"
             ));
 
+            bundles.Add(new ScriptBundle("~/bundles/carousel").Include(
+                "~/Scripts/angularJsApp/app.module.js",
+                "~/Scripts/angularJsApp/carousel/carousel.module.js",
+                "~/Scripts/angularJsApp/carousel/carousel.component.js"
+            ));
+
 
             //bundles.Add(new StyleBundle("~/Content/material-design-lite").Include(
             //        "~/Content/material-design-lite/material.min.css"));

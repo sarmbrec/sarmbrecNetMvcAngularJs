@@ -112,6 +112,10 @@
       {
         "title": "Tutorial",
         "url": "https://docs.angularjs.org/tutorial"
+      },
+      {
+        "title": "Prerequisets / How to start",
+        "url": "https://www.agiletrailblazers.com/blog/modernized-technology/how-to-start-an-angularjs-application"
       }
     ]
   },

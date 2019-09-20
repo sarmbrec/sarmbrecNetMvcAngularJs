@@ -1,0 +1,46 @@
+﻿<!--<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-info mt-3">
+                <i class="fa fa-info-circle fa-2x align-middle mr-1"></i>
+                <span class="small">
+                    Angularize this component, move the html into this template and figure out why bs4 doesn't play nice.
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+carousel
+<div class="card-columns data-ng-cloak">
+    <section id="section-knowledge-base" class="card shadow-sm animated fadeIn delay-3s" ng-repeat="item in $ctrl.carousel | filter:$ctrl.query | orderBy:$ctrl.category">
+        <div class="card-body">
+            <h3 class="card-title">{{item.title}}</h3>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.subTitle}}</h6>
+            <p class="card-text">{{item.text}}</p>
+            <ul>
+                <li ng-repeat="link in item.links"><a class="card-link" href="{{item.url}}" target="_blank">{{item.title}}</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index" data-slide-to="{{$index}}"></li>
+        
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index">
+            <img ng-src="{{item.background}}" />
+        </div>
+    </div>
+    <span class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </span>
+    <span class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </span>
+</div>

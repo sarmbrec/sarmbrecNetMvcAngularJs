@@ -1,9 +1,7 @@
-﻿(function () {
+﻿//(function () {
     //'use strict';
-
     // set knowledgeBaseApp
     //angular.module('knowledgeBaseApp', []);
-
     // get knowledgeBaseAppApp
     //angular.module('app', [
         // Angular modules 
@@ -11,5 +9,4 @@
         // Custom modules 
         // 3rd Party Modules
     //]);
-
-})();
+//})();

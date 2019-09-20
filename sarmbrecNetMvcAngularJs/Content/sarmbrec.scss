@@ -1,7 +1,8 @@
 ﻿
 
 @import "bootstrapSASS/bootstrap.scss";
-@import "animate/animate.min.css";
+@import "font-awesome/font-awesome.css";
+@import "animate/animate.css";
 @import "brand/_sarmbrec-brand.scss";
 
 
@@ -24,12 +25,17 @@ body {
         max-width: 280px;
     }
 
-    .card-columns {
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+    .font-awesome {
+        font-family: FontAwesome, sans-serif;
+    }
 
+    .card-columns {
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        /*-webkit-animation-fill-mode: both;
+        animation-fill-mode: both;*/
+
+            column-count: 4;
 
         @include media-breakpoint-up(xs) {
             column-count: 1;
@@ -58,10 +64,10 @@ body {
     /*articles of content*/
     article#article-carousel {
         background-color: rgba(233, 236, 239, .5);
-        background-image: url('images/backgrounds/fire_place_edit0.jpg');
+        /*background-image: url('images/backgrounds/fire_place_edit0.jpg');
         background-attachment: fixed;
         background-position: top right;
-        background-size: cover;
+        background-size: cover;*/
         section#section-carousel {
             margin-bottom: 1.5rem;
 
@@ -112,7 +118,7 @@ body {
         background-size: cover;*/
         section#section-knowledge-base {
 
-            &.card {
+            .card {
                 background-color: rgba(233, 236, 239, .5);
 
                 .card-title {
@@ -156,6 +162,10 @@ body {
                 }
             }
         }
+    }
+
+    article #article-getting-started {
+        display: none;
     }
 }
 

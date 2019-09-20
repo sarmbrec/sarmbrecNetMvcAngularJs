@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Front end technology",
+    "title": "HTML 5",
+    "subTitle": "Hypertext Markup Language",
+    "background": "/Content/images/backgrounds/floodedroad.jpg",
+    "text": "A software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.",
+    "links": [
+      {
+        "title": "Semantic HTML Validator",
+        "url": "https://validator.w3.org/nu/#textarea"
+      },
+      {
+        "title": "Semantic HTML Guide",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+      },
+      {
+        "title": "Bootstrap 3",
+        "url": "https://getbootstrap.com/docs/3.3/"
+      },
+      {
+        "title": "Bootstrap 4",
+        "url": "https://getbootstrap.com/docs/4.3/"
+      },
+      {
+        "title": "Material Design Lite",
+        "url": "https://getmdl.io/"
+      }
+    ]
+  },
+  {
+    "category": "Front end technology",
+    "title": "SASS",
+    "subTitle": "Syntactically Awesome Style Sheets",
+    "background": "/Content/images/backgrounds/beachhousepelicans.jpg",
+    "text": "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
+    "links": [
+      {
+        "title": "Sass",
+        "url": "https://sass-lang.com/"
+      }
+    ]
+  },
+
+  {
+    "category": "Front end technology",
+    "title": "JavaScript",
+    "subTitle": "Fun on a bun",
+    "background": "/Content/images/backgrounds/beachhouse.jpg",
+    "text": "A lightweight, interpreted, or just-in-time compiled programming language with first-class functions.",
+    "links": [
+      {
+        "title": "JavaScript MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      }
+    ]
+  }
+]

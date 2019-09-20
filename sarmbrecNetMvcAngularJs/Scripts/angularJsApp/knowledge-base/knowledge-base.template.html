@@ -1,20 +1,21 @@
 ﻿
 <nav class="navbar navbar-light bg-light mb-2 data-ng-cloak">
-    <form class="form-inline ml-auto">
-        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search" ng-model="$ctrl.query">
-        <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
+    <form class="form-inline">        
+        <input class="form-control form-control-sm font-awesome" type="search" placeholder="&#xF002; Search" aria-label="Search" ng-model="$ctrl.query"><!--<i class="fa fa-search ml-1"></i>-->
     </form>    
 </nav>
 
 <div class="card-columns data-ng-cloak">
-    <section id="section-knowledge-base" class="card shadow-sm" ng-repeat="kb in $ctrl.knowledgeBase | filter:$ctrl.query">
-        <div class="card-body">
-            <h3 class="card-title">{{kb.title}}</h3>
-            <h6 class="card-subtitle mb-2 text-muted">{{kb.subTitle}}</h6>
-            <p class="card-text">{{kb.text}}</p>
-            <ul>
-                <li class="" ng-repeat="link in kb.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>
-            </ul>
+    <section id="section-knowledge-base">
+        <div class="card shadow-sm animated fadeIn delay-3s" ng-repeat="kb in $ctrl.knowledgeBase | filter:$ctrl.query | orderBy:$ctrl.category">
+            <div class="card-body">
+                <h3 class="card-title">{{kb.title}}</h3>
+                <h6 class="card-subtitle mb-2 text-muted">{{kb.subTitle}}</h6>
+                <p class="card-text">{{kb.text}}</p>
+                <ul>
+                    <li ng-repeat="link in kb.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 </div>
