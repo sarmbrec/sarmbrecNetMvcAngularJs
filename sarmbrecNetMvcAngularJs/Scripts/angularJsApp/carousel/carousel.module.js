@@ -2,6 +2,6 @@
     'use strict';
 
     // Define the `sarmbrecCarouselModule` module
-    angular.module('carouselModule', []);
+    angular.module('carouselModule', ['ngRoute']);
 
 })();

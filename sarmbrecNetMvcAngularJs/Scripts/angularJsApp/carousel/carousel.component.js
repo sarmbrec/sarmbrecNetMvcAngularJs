@@ -10,15 +10,20 @@
                 function CarouselComponentController($http) {
                     var self = this;
                     self.orderProp = 'category';
-                    $http.get('/Content/json/carousel.json').then(function (response) {
 
-                        //console.log('hello')
+                    $http.get('/Content/json/carousel.json').then(function (response) {
                         self.carousel = response.data;
 
-                        //console.log('carousel = ', self.carousel);
-
                     });
+
+                    $('.carousel').carousel({
+                        interval: false,
+                        pause: 'hover',
+                        wrap: true
+                    });
+
                 }
+
             ]
         });
 })();

@@ -7119,8 +7119,8 @@ $breadcrumb-active-color: $gray-500;*/
     background-color: #111111 !important;
 }*/
 body {
-  padding-top: 55px;
   /* Set padding to keep content from hitting the edges */
+  padding-top: 56px;
   /* Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column */
   /* Set width on the form input elements since they're 100% wide by default */
   /*Angular template show fix*/
@@ -7164,18 +7164,42 @@ body {
         background-position: top right;
         background-size: cover;*/ }
     body article#article-carousel section#section-carousel {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1.5rem;
+      /*border: 4px solid green;*/ }
       body article#article-carousel section#section-carousel .carousel-inner {
-        height: 65vh;
-        width: 100vw; }
+        height: 75vh;
+        width: 100%; }
         body article#article-carousel section#section-carousel .carousel-inner .carousel-item {
-          /*height: 100vh;
-                    width: 100vw;
-                    overflow: hidden;*/ }
-          body article#article-carousel section#section-carousel .carousel-inner .carousel-item > img {
-            height: 75vh;
-            width: 100vw;
-            opacity: .9; }
+          /*display: block;*/
+          /*background-image: url('images/backgrounds/fire_place_edit0.jpg');*/
+          /**/
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+          background-image: none;
+          background-attachment: fixed;
+          background-position: bottom left;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: rgba(233, 236, 239, 0.95);
+          border-top: 1px solid rgba(0, 0, 0, 0.4);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+          /*> img {
+                        height: 75vh;
+                        width: 100vw;
+                        opacity: .9;
+                    }*/ }
+          body article#article-carousel section#section-carousel .carousel-inner .carousel-item .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 10rem;
+            left: 15%;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4); }
   body article#article-jumbotron section#section-jumbotron .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -7192,30 +7216,25 @@ body {
             background-position: top left;
             background-size: 85% 40%;
             background-repeat: no-repeat;*/ }
-  body article#article-knowledge-base {
-    /*background-image: url('images/backgrounds/fire_place_edit0.jpg');
-        background-attachment: fixed;
-        background-position: top right;
-        background-size: cover;*/ }
-    body article#article-knowledge-base section#section-knowledge-base .card {
-      background-color: rgba(233, 236, 239, 0.5); }
-      body article#article-knowledge-base section#section-knowledge-base .card .card-title {
-        font-size: 1rem; }
-      body article#article-knowledge-base section#section-knowledge-base .card .card-subtitle {
-        font-size: .8rem; }
-      body article#article-knowledge-base section#section-knowledge-base .card .card-text {
-        font-size: .9rem; }
-        body article#article-knowledge-base section#section-knowledge-base .card .card-text:last-of-type {
-          margin-bottom: .5rem; }
-      body article#article-knowledge-base section#section-knowledge-base .card .card-body ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 .5rem;
-        font-size: .8rem; }
-        body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a {
-          text-decoration: underline; }
-          body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a:hover, body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a:active, body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a:focus {
-            text-decoration: none; }
+  body article#article-knowledge-base section#section-knowledge-base .card {
+    background-color: rgba(233, 236, 239, 0.5); }
+    body article#article-knowledge-base section#section-knowledge-base .card .card-title {
+      font-size: 1rem; }
+    body article#article-knowledge-base section#section-knowledge-base .card .card-subtitle {
+      font-size: .8rem; }
+    body article#article-knowledge-base section#section-knowledge-base .card .card-text {
+      font-size: .9rem; }
+      body article#article-knowledge-base section#section-knowledge-base .card .card-text:last-of-type {
+        margin-bottom: .5rem; }
+    body article#article-knowledge-base section#section-knowledge-base .card .card-body ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 .5rem;
+      font-size: .8rem; }
+      body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a {
+        text-decoration: underline; }
+        body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a:hover, body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a:active, body article#article-knowledge-base section#section-knowledge-base .card .card-body ul li a:focus {
+          text-decoration: none; }
   body article #article-getting-started {
     display: none; }
 

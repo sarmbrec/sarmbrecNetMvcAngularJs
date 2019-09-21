@@ -4,8 +4,10 @@
     // Define the `knowledgeBaseApp` module
     angular.module('sarmbrecApp', [
         // ...which depends on the `knowledgeBase` module
+        'ngRoute',
         'knowledgeBase', // camel case here converts to hypens in html
-        'carouselModule'
+        'carouselModule',
+        'phoneDetail'
     ]);
 
     // Define the `carouselApp` module

@@ -1,15 +1,11 @@
-﻿
-
-@import "bootstrapSASS/bootstrap.scss";
+﻿@import "bootstrapSASS/bootstrap.scss";
 @import "font-awesome/font-awesome.css";
 @import "animate/animate.css";
 @import "brand/_sarmbrec-brand.scss";
-
-
-
 body {
-    padding-top: 55px;
     /* Set padding to keep content from hitting the edges */
+    
+    padding-top: 56px;
     .body-content {
         padding-left: 15px;
         padding-right: 15px;
@@ -34,8 +30,7 @@ body {
         animation-duration: 1.5s;
         /*-webkit-animation-fill-mode: both;
         animation-fill-mode: both;*/
-
-            column-count: 4;
+        column-count: 4;
 
         @include media-breakpoint-up(xs) {
             column-count: 1;
@@ -70,19 +65,43 @@ body {
         background-size: cover;*/
         section#section-carousel {
             margin-bottom: 1.5rem;
-
+            /*border: 4px solid green;*/
             .carousel-inner {
-                height: 65vh;
-                width: 100vw;
+                height: 75vh;
+                width: 100%;
+
 
                 .carousel-item {
-                    /*height: 100vh;
-                    width: 100vw;
-                    overflow: hidden;*/
-                    > img {
+                    /*display: block;*/
+                    /*background-image: url('images/backgrounds/fire_place_edit0.jpg');*/
+                    /**/
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    background-image: none;
+                    background-attachment: fixed;
+                    background-position: bottom left;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-color: rgba(233, 236, 239, .95);
+                    border-top: 1px solid rgba(000, 000, 000, .4);
+                    border-bottom: 1px solid rgba(000, 000, 000, .6);
+                    /*> img {
                         height: 75vh;
                         width: 100vw;
                         opacity: .9;
+                    }*/
+                    .carousel-caption {
+                        position: absolute;
+                        right: 15%;
+                        bottom: 10rem;
+                        left: 15%;
+                        z-index: 10;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        color: #fff;
+                        text-align: center;
+                        background-color: rgba(000, 000, 000, .4);
                     }
                 }
             }
@@ -112,12 +131,7 @@ body {
     }
 
     article#article-knowledge-base {
-        /*background-image: url('images/backgrounds/fire_place_edit0.jpg');
-        background-attachment: fixed;
-        background-position: top right;
-        background-size: cover;*/
         section#section-knowledge-base {
-
             .card {
                 background-color: rgba(233, 236, 239, .5);
 
@@ -137,10 +151,7 @@ body {
                     }
                 }
 
-
                 .card-body {
-
-
                     ul {
                         list-style-type: none;
                         margin: 0;

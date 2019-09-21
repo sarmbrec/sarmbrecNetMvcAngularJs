@@ -2,6 +2,6 @@
     'use strict';
 
     // Define the `knowledgeBase` module
-    angular.module('knowledgeBase', []);
+    angular.module('knowledgeBase', ['ngRoute']);
 
 })();

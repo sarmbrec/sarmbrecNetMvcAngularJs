@@ -27,16 +27,23 @@ namespace sarmbrecNetMvcAngularJs
                       "~/Scripts/bootstrap3/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularJS").Include(
-                      "~/Scripts/angularjs/angular.js"));
+                "~/Scripts/angularjs/angular.js",
+                "~/Scripts/angularjs/angular-route.js",
+                "~/Scripts/angularJsApp/app.module.js",
+                "~/Scripts/angularJsApp/app.config.js"
+                ));
 
             bundles.Add(new ScriptBundle("~/bundles/knowledgeBase").Include(
-                "~/Scripts/angularJsApp/app.module.js",
                 "~/Scripts/angularJsApp/knowledge-base/knowledge-base.module.js",
                 "~/Scripts/angularJsApp/knowledge-base/knowledge-base.component.js"
             ));
 
+            bundles.Add(new ScriptBundle("~/bundles/phoneDetail").Include(
+                "~/Scripts/angularJsApp/phone-detail/phone-detail.module.js",
+                "~/Scripts/angularJsApp/phone-detail/phone-detail.component.js"
+            ));
+
             bundles.Add(new ScriptBundle("~/bundles/carousel").Include(
-                "~/Scripts/angularJsApp/app.module.js",
                 "~/Scripts/angularJsApp/carousel/carousel.module.js",
                 "~/Scripts/angularJsApp/carousel/carousel.component.js"
             ));

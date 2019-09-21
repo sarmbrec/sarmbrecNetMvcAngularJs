@@ -24,23 +24,32 @@ carousel
     </section>
 </div>
 -->
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index" data-slide-to="{{$index}}"></li>
-        
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index">
-            <img ng-src="{{item.background}}" />
+<article id="article-carousel">
+    <h1 class="sr-only">Carousel of items</h1>
+    <section id="section-carousel" class="shadow">
+        <h2 class="sr-only">Do like old carousel of tech</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index" data-slide-to="{{$index}}"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div ng-style="{'background-image': 'url(' + item.background + ')'}"  class="carousel-item" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index">
+                    <!--<img ng-src="{{item.background}}" />-->
+                    test
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.text}}</p>
+                    </div>
+                </div>
+            </div>
+            <span class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </span>
+            <span class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </span>
         </div>
-    </div>
-    <span class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </span>
-    <span class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </span>
-</div>
+    </section>
+</article>

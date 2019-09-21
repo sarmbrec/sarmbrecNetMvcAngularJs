@@ -216,7 +216,7 @@
     <Content Include="Scripts\angularJsApp\carousel\carousel.template.html" />
     <Content Include="Scripts\angularJsApp\knowledge-base\knowledge-base.module.js" />
     <Content Include="Scripts\angularJsApp\app.module.js" />
-    <Content Include="Scripts\angularJsApp\app.js" />
+    <Content Include="Scripts\angularJsApp\app.config.js" />
     <Content Include="Scripts\angularJsApp\knowledge-base\knowledge-base.component.js" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.css" />
     <Content Include="Content\bootstrapCSS\bootstrap-theme.min.css" />
@@ -258,6 +258,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angularJsApp\phone-detail\knowledge-base.template.html" />
+    <Content Include="Scripts\angularJsApp\phone-detail\phone-detail.component.js" />
+    <Content Include="Scripts\angularJsApp\phone-detail\phone-detail.module.js" />
     <Content Include="Scripts\angularjs\angular-animate.js" />
     <Content Include="Scripts\angularjs\angular-animate.min.js" />
     <Content Include="Scripts\angularjs\angular-aria.js" />

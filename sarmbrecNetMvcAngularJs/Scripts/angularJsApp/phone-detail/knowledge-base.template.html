@@ -1,0 +1,24 @@
+﻿<article id="article-knowledge-base" class="animated fadeIn slower delay-3s">
+    <h1 class="mb-0">Knowledge base</h1>
+
+    <nav class="navbar navbar-light bg-light mb-2 data-ng-cloak">
+        <form class="form-inline">
+            <input class="form-control form-control-sm font-awesome" type="search" placeholder="&#xF002; Search" aria-label="Search" ng-model="$ctrl.query"><!--<i class="fa fa-search ml-1"></i>-->
+        </form>
+    </nav>
+
+    <div class="card-columns data-ng-cloak">
+        <section id="section-knowledge-base">
+            <div class="card shadow-sm animated fadeIn delay-3s" ng-repeat="kb in $ctrl.knowledgeBase | filter:$ctrl.query | orderBy:$ctrl.category">
+                <div class="card-body">
+                    <h3 class="card-title">{{kb.title}}</h3>
+                    <h6 class="card-subtitle mb-2 text-muted">{{kb.subTitle}}</h6>
+                    <p class="card-text">{{kb.text}}</p>
+                    <ul>
+                        <li ng-repeat="link in kb.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</article>

@@ -1,24 +1,27 @@
 ﻿@{
     /**/
 
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "sarmbrec";
 }
 
-
 @*@Html.Partial("_JumboTronPartial")*@
+@*@Html.Partial("_CarouselPartial")*@
+@*<div class="container body-content">*@
 
-@Html.Partial("_CarouselPartial")
 
-<div class="container body-content">
-    
-    @Html.Partial("_KnowledgeBasePartial")
-    
+@*<div>
+    <a href="/">Home</a> |
+    <a href="/kb">Knowledge Base</a> |
+    <a href="/ci">Carousel</a>
+</div>*@
+
+    <div ng-view></div>
+    @*@Html.Partial("_KnowledgeBasePartial")
     <hr class="mt-3 mb-4 animated fadeIn slower delay-5s" />
-    
-    @Html.Partial("_GettingStartedPartial")
-
-</div>
+    @Html.Partial("_GettingStartedPartial")*@
+@*</div>*@
 
 @Scripts.Render("~/bundles/angularJS")
+@Scripts.Render("~/bundles/phoneDetail")
 @Scripts.Render("~/bundles/carousel")
 @Scripts.Render("~/bundles/knowledgeBase")
