@@ -1,42 +1,19 @@
-﻿<!--<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="alert alert-info mt-3">
-                <i class="fa fa-info-circle fa-2x align-middle mr-1"></i>
-                <span class="small">
-                    Angularize this component, move the html into this template and figure out why bs4 doesn't play nice.
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-carousel
-<div class="card-columns data-ng-cloak">
-    <section id="section-knowledge-base" class="card shadow-sm animated fadeIn delay-3s" ng-repeat="item in $ctrl.carousel | filter:$ctrl.query | orderBy:$ctrl.category">
-        <div class="card-body">
-            <h3 class="card-title">{{item.title}}</h3>
-            <h6 class="card-subtitle mb-2 text-muted">{{item.subTitle}}</h6>
-            <p class="card-text">{{item.text}}</p>
-            <ul>
-                <li ng-repeat="link in item.links"><a class="card-link" href="{{item.url}}" target="_blank">{{item.title}}</a></li>
-            </ul>
-        </div>
-    </section>
-</div>
--->
+﻿
 <article id="article-carousel">
     <h1 class="sr-only">Carousel of items</h1>
     <section id="section-carousel" class="shadow">
         <h2 class="sr-only">Do like old carousel of tech</h2>
         <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index" data-slide-to="{{$index}}"></li>
+                <li data-target="#carouselExampleIndicators" 
+                    ng-class="{ 'active' : $index == 0 }" 
+                    ng-repeat="item in $ctrl.carousel track by $index" 
+                    data-slide-to="{{$index}}"></li>
             </ol>
             <div class="carousel-inner">
-                <div ng-style="{'background-image': 'url(' + item.background + ')'}"  class="carousel-item" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index">
-                    <!--<img ng-src="{{item.background}}" />-->
-                    test
-                    <div class="carousel-caption d-none d-md-block">
+                <div ng-style="{'background-image': 'url(' + item.background + ')'}" class="carousel-item" ng-class="{ 'active' : $index == 0 }" ng-repeat="item in $ctrl.carousel track by $index">
+                    <!--<img ng-src="{{item.background}}" />d-none d-md-block-->
+                    <div class="carousel-caption">
                         <h2>{{item.title}}</h2>
                         <p>{{item.text}}</p>
                     </div>

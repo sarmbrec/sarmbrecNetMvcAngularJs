@@ -7126,6 +7126,7 @@ body {
   /*Angular template show fix*/
   /*articles of content*/ }
   body .body-content {
+    padding-top: 1rem;
     padding-left: 15px;
     padding-right: 15px; }
   body .dl-horizontal dt {
@@ -7133,7 +7134,7 @@ body {
   body input,
   body select,
   body textarea {
-    max-width: 280px; }
+    /*max-width: 280px;*/ }
   body .font-awesome {
     font-family: FontAwesome, sans-serif; }
   body .card-columns {
@@ -7178,7 +7179,7 @@ body {
           overflow: hidden;
           background-image: none;
           background-attachment: fixed;
-          background-position: bottom left;
+          background-position: left bottom;
           background-size: cover;
           background-repeat: no-repeat;
           background-color: rgba(233, 236, 239, 0.95);

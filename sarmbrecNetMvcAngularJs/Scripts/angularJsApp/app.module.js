@@ -5,8 +5,10 @@
     angular.module('sarmbrecApp', [
         // ...which depends on the `knowledgeBase` module
         'ngRoute',
+        'headerModule',
         'knowledgeBase', // camel case here converts to hypens in html
         'carouselModule',
+        'techStackAngularjs',
         'phoneDetail'
     ]);
 

@@ -13,9 +13,16 @@
         module('sarmbrecApp').
         config(['$routeProvider', '$locationProvider',
             function config($routeProvider, $locationProvider) {
-                    $routeProvider.
-                    when('/home', {
-                        template: '<carousel-module></carousel-module><knowledge-base></knowledge-base>'
+                $routeProvider.
+                    when('/', {
+                        //template: '<carousel-module></carousel-module><knowledge-base></knowledge-base>'
+                        templateUrl: '/Scripts/angularJsApp/views/homepage.html'
+                        //controller: 'knowledgeBase',
+                        //controllerAs: 'inbox'
+                    }).                    
+                    when('/angularjs', {
+                        //templateUrl: '/Scripts/angularJsApp/views/homepage.html'
+                        template: '<tech-stack-angularjs></tech-stack-angularjs>'
                     }).
                     when('/kb', {
                         template: '<knowledge-base></knowledge-base>'
@@ -23,11 +30,11 @@
                     //when('/ci/:phoneId', {
                     when('/ci', {                        
                         template: '<carousel-module></carousel-module>'
-                    }).
-                    otherwise('/home');
+                    }).                    
+                    otherwise('/');
 
                     // use the HTML5 History API
-                    $locationProvider.html5Mode(true);
+                    //$locationProvider.html5Mode(true);
                 }
             ]);
 })();

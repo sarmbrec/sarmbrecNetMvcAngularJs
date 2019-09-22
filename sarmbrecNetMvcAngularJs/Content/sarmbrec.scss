@@ -7,6 +7,7 @@ body {
     
     padding-top: 56px;
     .body-content {
+        padding-top: 1rem;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -18,7 +19,7 @@ body {
     input,
     select,
     textarea {
-        max-width: 280px;
+        /*max-width: 280px;*/
     }
 
     .font-awesome {
@@ -80,7 +81,7 @@ body {
                     overflow: hidden;
                     background-image: none;
                     background-attachment: fixed;
-                    background-position: bottom left;
+                    background-position: left bottom;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-color: rgba(233, 236, 239, .95);
