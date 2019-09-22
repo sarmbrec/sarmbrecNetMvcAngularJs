@@ -99,11 +99,19 @@
     "category": "Front end technology",
     "title": "AngularJS",
     "subTitle": "Superheroic JavaScript MVW Framework",
-    "text": "",
+    "text": "Walk end-to-end through building an application complete with tests on top of a node.js web server. Covers every major AngularJS feature and shows you how to set up your development environment.",
     "links": [
       {
         "title": "Styleguide",
         "url": "https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md"
+      },
+      {
+        "title": "Developer Guide covering concepts",
+        "url": "https://docs.angularjs.org/guide/index"
+      },
+      {
+        "title": "API Reference for syntax",
+        "url": "https://docs.angularjs.org/api"
       },
       {
         "title": "Documentation",
@@ -119,15 +127,16 @@
       }
     ],
     "techStack": {
-      "links": [        
-          {
-            "title": "Creating from scratch guide",
-            "url": "https://angular.io/"
-          },
-          {
-            "title": "Creating from visual studio guide",
-            "url": "https://angular.io/start"
-          }        
+      "url": "/#!/angularjs",
+      "links": [
+        {
+          "title": "Creating from scratch guide",
+          "url": "https://angular.io/"
+        },
+        {
+          "title": "Creating from visual studio guide",
+          "url": "https://angular.io/start"
+        }
       ]
     }
   },

@@ -34,10 +34,13 @@
                         }}</h3>
                         <h6 class="card-subtitle mb-2 text-muted">{{kb.subTitle}}</h6>
                         <p class="card-text">{{kb.text}}</p>
-                        <ul>
+                        <ul ng-show="!kb.techStack.url">
                             <li ng-repeat="link in kb.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>
                         </ul>
-</div>
+                        <p ng-show="kb.techStack.url">
+                            <a href="{{kb.techStack.url}}" class="btn btn-dark btn-sm">My knowledge of {{kb.title}}</a>
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>

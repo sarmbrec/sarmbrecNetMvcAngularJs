@@ -7024,6 +7024,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*! Import Bootstrap 4 variables */
 /*! sarmbrec branding */
+/*$link-color: theme-color("secondary");
+    $link-decoration: underline;
+    $link-hover-color: darken($link-color, 15%);
+    $link-hover-decoration: none !default;
+    // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+    $emphasized-link-hover-darken-percentage: 15%;*/
+a {
+  color: #0062cc; }
+
 body {
   /*font-size: 16px; ios force for form spacing*/ }
 
@@ -7031,10 +7040,10 @@ h1 {
   display: block;
   font-size: 1.5rem;
   padding-bottom: .25rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(108, 117, 125, 0.15);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(108, 117, 125, 0.25);
   text-transform: capitalize;
-  color: rgba(0, 123, 255, 0.5); }
+  color: #0062cc; }
 
 h2 {
   font-size: 1.25rem; }
@@ -7120,15 +7129,19 @@ $breadcrumb-active-color: $gray-500;*/
 }*/
 body {
   /* Set padding to keep content from hitting the edges */
-  padding-top: 56px;
+  padding: 56px 0 0 0;
+  /*background-color: $light;*/
   /* Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column */
   /* Set width on the form input elements since they're 100% wide by default */
   /*Angular template show fix*/
   /*articles of content*/ }
   body .body-content {
     padding-top: 1rem;
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: .875rem;
+    /*background-color: lighten($light, 15%)*/ }
   body .dl-horizontal dt {
     white-space: normal; }
   body input,
@@ -7238,6 +7251,10 @@ body {
           text-decoration: none; }
   body article #article-getting-started {
     display: none; }
+
+footer {
+  font-size: .8rem;
+  /*background-color: $light;*/ }
 
 /* installed brand fonts*/
 /*@font-face {

@@ -1,15 +1,19 @@
 ﻿@import "bootstrapSASS/bootstrap.scss";
+@import "brand/_sarmbrec-brand.scss";
 @import "font-awesome/font-awesome.css";
 @import "animate/animate.css";
-@import "brand/_sarmbrec-brand.scss";
 body {
     /* Set padding to keep content from hitting the edges */
-    
-    padding-top: 56px;
+    padding: 56px 0 0 0;
+    /*background-color: $light;*/
+
     .body-content {
         padding-top: 1rem;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+        font-size: .875rem;
+        /*background-color: lighten($light, 15%)*/;
     }
     /* Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column */
     .dl-horizontal dt {
@@ -182,7 +186,10 @@ body {
 }
 
 
-
+footer{
+    font-size: .8rem;
+    /*background-color: $light;*/
+}
 
 
 

@@ -6,6 +6,25 @@
 /*! sarmbrec branding */
 $black: rgb(000,000,000);
 
+// Links
+//
+// Style anchor elements.$link-color: theme-color("primary") !default;
+    /*$link-color: theme-color("secondary");
+    $link-decoration: underline;
+    $link-hover-color: darken($link-color, 15%);
+    $link-hover-decoration: none !default;
+    // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+    $emphasized-link-hover-darken-percentage: 15%;*/
+
+a {
+    color: darken($link-color, 10%);
+    //text-decoration: $link-decoration;
+}
+
+
+
+
+
 body{
 
     /*font-size: 16px; ios force for form spacing*/
@@ -14,10 +33,10 @@ h1 {
     display: block;
     font-size: 1.5rem;
     padding-bottom: .25rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid rgba($secondary,.15);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba($secondary,.25);
     text-transform: capitalize;
-    color: rgba($primary,.5);
+    color: darken($primary, 10%);
 }
 h2{
     font-size: 1.25rem;

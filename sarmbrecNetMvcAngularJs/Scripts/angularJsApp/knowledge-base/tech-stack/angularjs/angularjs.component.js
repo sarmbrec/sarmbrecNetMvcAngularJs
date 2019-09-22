@@ -10,9 +10,12 @@
                     var self = this;
                     self.orderProp = 'category';
                     $http.get('/Content/json/knowledge-base.json').then(function (response) {
-                        self.techStackAngularjs = $.grep(response.data, function (b) {
+                        self.knowledgeBase = $.grep(response.data, function (b) {
                             return b.title === "AngularJS";
                         });
+                    });
+                    $http.get('/Content/json/knowledge-base-angularjs.json').then(function (response) {
+                        self.techStackAngularjs = response.data;
                     });
                 }
             ]

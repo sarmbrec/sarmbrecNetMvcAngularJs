@@ -2,40 +2,88 @@
     <article id="article-tech-stack-angularjs">
         <section id="section-tech-stack-angularjs">
             <div class="row">
-                <div class="col-8">
-
-                    <h1 class="mb-1">{{$ctrl.techStackAngularjs[0].title}}</h1>
-
-                    <p class="lead font-weight-light">{{$ctrl.techStackAngularjs[0].subTitle}}</p>
-
-                    <p>{{$ctrl.techStackAngularjs[0].category}}</p>
-
-                    <p>{{$ctrl.techStackAngularjs[0].text}}</p>                                       
-
-                    <code>{{$ctrl.techStackAngularjs}}</code>
-
-                </div>
-                <div class="col-4">
+                <div class="col-md-4 order-md-2 mb-4 mb-md-0">
 
                     <div class="card mb-4">
                         <div class="card-body">
                             <img src="../../../../../Content/images/logos/AngularJS-medium.png" class="img-fluid" />
                         </div>
-                        <div class="list-group list-group-flush small">
-                            <a ng-repeat="link in $ctrl.techStackAngularjs[0].links" class="list-group-item list-group-item-action py-2" href="{{link.url}}">{{link.title}}</a>
+                        <div class="list-group list-group-flush">
+                            <a ng-repeat="link in $ctrl.knowledgeBase[0].links" class="list-group-item list-group-item-action py-2" href="{{link.url}}">{{link.title}}</a>
                         </div>
                     </div>
 
                     <div class="">
                         <h5>Guides</h5>
-                        <div class="list-group list-group-flush small">
-                            <a ng-repeat="link in $ctrl.techStackAngularjs[0].techStack.links" class="list-group-item list-group-item-action py-2" href="{{link.url}}">{{link.title}}</a>
+                        <div class="list-group">
+                            <a ng-repeat="link in $ctrl.techStackAngularjs.techStack.links" class="list-group-item list-group-item-action py-2" href="{{link.url}}">{{link.title}}</a>
                         </div>
                     </div>
 
-                    
+                </div>
+                <div class="col-md-8 order-md-1">
+
+                    <h1>{{$ctrl.knowledgeBase[0].title}}</h1>
+
+                    <p class="lead font-weight-light">{{$ctrl.knowledgeBase[0].subTitle}}</p>
+
+                    <p>{{$ctrl.knowledgeBase[0].text}}</p>
+
+                    <p>
+                        <a href="https://docs.angularjs.org/misc/started" target="_blank">https://docs.angularjs.org/misc/started</a>
+                    </p>
+
+                    <hr />
+
+                    <h2>Getting Started</h2>
+
+                    <ol>
+                        <li>
+                            <a href="https://docs.angularjs.org/guide/concepts" target="_blank">Read the conceptual overview</a>.
+                            <br />
+                            Understand AngularJS's vocabulary and how all the AngularJS components work together.
+                        </li>
+                        <li>
+                            Do the <a href="https://docs.angularjs.org/tutorial/" target="_blank">AngularJS Tutorial</a>.
+                            <br />
+                            Walk end-to-end through building an application complete with tests on top of a node.js web server. Covers every major AngularJS feature and shows you how to set up your development environment.
+                        </li>
+                        <li>
+                            Download or clone the <a href="https://github.com/angular/angular-seed" target="_blank">Seed App project template</a>.
+                            <br />
+                            Gives you a starter app with a directory layout, test harness, and scripts to begin building your application.
+                        </li>
+                    </ol>
+
+                    <hr />
+
+                    <h2>Further Steps</h2>
+
+                    <ol>
+                        <li><a href="http://www.youtube.com/watch?v=WuiHuZq_cg4&list=PL173F1A311439C05D&context=C48ac877ADvjVQa1PpcFONnl4Q5x8hqvT6tRBTE-m0-Ym47jO3PEE%3D" target="_blank">Introduction to AngularJS</a></li>
+                        <li><a href="http://www.youtube.com/watch?v=Yg-R1gchccg&list=PL173F1A311439C05D&context=C48ac877ADvjVQa1PpcFONnl4Q5x8hqvT6tRBTE-m0-Ym47jO3PEE%3D" target="_blank">Creating Directives</a></li>
+                        <li><a href="http://www.youtube.com/watch?v=IRelx4-ISbs&list=PL173F1A311439C05D&context=C48ac877ADvjVQa1PpcFONnl4Q5x8hqvT6tRBTE-m0-Ym47jO3PEE%3D" target="_blank">Communicating with Servers</a></li>
+                        <li><a href="http://www.youtube.com/user/angularjs" target="_blank">YouTube channel</a> for more AngularJS video presentations and tutorials.</li>
+                    </ol>
+
+                    <hr />
+
+                    <h2>Read more</h2>
+
+                    <p>
+                        The AngularJS documentation includes the
+                        <a href="https://docs.angularjs.org/guide/index" target="_blank">Developer Guide</a>
+                        covering concepts and the
+                        <a href="https://docs.angularjs.org/api" target="_blank">API Reference</a>
+                        for syntax and usage.
+                    </p>
+
+
+
+                    <!--<div class="card"><code class="card-body">{{$ctrl.knowledgeBase[0]}}</code></div>-->
 
                 </div>
+
             </div>
         </section>
     </article>
