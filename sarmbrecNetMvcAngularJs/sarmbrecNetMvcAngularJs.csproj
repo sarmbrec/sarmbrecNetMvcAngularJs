@@ -210,7 +210,13 @@
     <Content Include="Content\images\backgrounds\originals-delete-this\IMG_2994.jpg" />
     <Content Include="Content\images\backgrounds\originals-delete-this\IMG_3350.JPG" />
     <Content Include="Content\images\backgrounds\originals-delete-this\IMG_3351.JPG" />
+    <Content Include="Content\images\logos\1250px-AngularJS_logo.png" />
     <Content Include="Content\images\logos\AngularJS-medium.png" />
+    <Content Include="Content\images\logos\AngularJS_logo.png" />
+    <Content Include="Content\images\logos\HTML5_Badge_512 .png" />
+    <Content Include="Content\images\logos\js-logo.jpg" />
+    <Content Include="Content\images\logos\sass-logo.png" />
+    <Content Include="Content\images\logos\sass-logo2.png" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Scripts\angularJsApp\header\header.component.js" />
     <Content Include="Scripts\angularJsApp\header\header.module.js" />
@@ -265,9 +271,6 @@
     <Content Include="Scripts\angularJsApp\knowledge-base\tech-stack\angularjs\angularjs.component.js" />
     <Content Include="Scripts\angularJsApp\knowledge-base\tech-stack\angularjs\angularjs.module.js" />
     <Content Include="Scripts\angularJsApp\knowledge-base\tech-stack\angularjs\angularjs.template.html" />
-    <Content Include="Scripts\angularJsApp\phone-detail\knowledge-base.template.html" />
-    <Content Include="Scripts\angularJsApp\phone-detail\phone-detail.component.js" />
-    <Content Include="Scripts\angularJsApp\phone-detail\phone-detail.module.js" />
     <Content Include="Scripts\angularJsApp\views\homepage.html" />
     <Content Include="Scripts\angularjs\angular-animate.js" />
     <Content Include="Scripts\angularjs\angular-animate.min.js" />

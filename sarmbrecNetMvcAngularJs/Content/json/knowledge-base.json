@@ -3,7 +3,7 @@
     "category": "Front end technology",
     "title": "HTML 5",
     "subTitle": "Hypertext Markup Language",
-    "text": "A software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.",
+    "text": "The latest evolution of the standard that defines HTML",
     "links": [
       {
         "title": "Semantic HTML Validator",
@@ -99,7 +99,7 @@
     "category": "Front end technology",
     "title": "AngularJS",
     "subTitle": "Superheroic JavaScript MVW Framework",
-    "text": "Walk end-to-end through building an application complete with tests on top of a node.js web server. Covers every major AngularJS feature and shows you how to set up your development environment.",
+    "text": "What HTML would have been, had it been designed for building web-apps.",
     "links": [
       {
         "title": "Styleguide",
@@ -237,6 +237,18 @@
       {
         "title": "ASP.NET MVC - Databases",
         "url": "https://www.tutorialspoint.com/asp.net_mvc/asp.net_mvc_databases.htm"
+      }
+    ]
+  },
+  {
+    "category": "tools",
+    "title": "Online tools",
+    "subTitle": "Things that make life easier",
+    "text": "",
+    "links": [
+      {
+        "title": "HEX to RGBA converter",
+        "url": "http://hex2rgba.devoth.com/"
       }
     ]
   }

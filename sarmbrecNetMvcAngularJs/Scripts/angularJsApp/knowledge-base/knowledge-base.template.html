@@ -1,48 +1,35 @@
 ﻿<div class="container body-content">
     <article id="article-knowledge-base" class="animated fadeIn slower delay-3s">
 
+        <h1 class="mb-0">Knowledge base</h1>       
 
-        <h1 class="mb-0">Knowledge base</h1>
-
-        <!--<form class="form-inline ml-auto">
-    <input class="form-control form-control-sm font-awesome" type="search" placeholder="&#xF002; Search" aria-label="Search" ng-model="$ctrl.query">
-        </form>-->
-
-
-        <nav class="navbar navbar-light bg-light mb-2 p-1 data-ng-cloak">
+        <nav class="navbar navbar-light bg-light mb-2 p-2 data-ng-cloak">
             <form class="form-inline">
-
                 <input class="form-control form-control-sm font-awesome" type="search" placeholder="&#xF002; Search" aria-label="Search" ng-model="$ctrl.query">
-
-
-
-                <!--<select id="showOnly" class="form-control form-control-sm ml-2">
-        <option value="all" selected>Show all</option>
-        <option value="{{item.title}}"
-                ng-repeat="item in $ctrl.knowledgeBase | orderBy:item.subTitle | filter:$ctrl.subTitle">
-            {{item.subTitle}}
-        </option>
-    </select>
-    {{$ctrl.knowledgeBase}}-->
             </form>
         </nav>
+
         <div class="card-columns data-ng-cloak">
             <section id="section-knowledge-base">
                 <div class="card shadow-sm animated fadeIn delay-3s" ng-repeat="kb in $ctrl.knowledgeBase | filter:$ctrl.query | orderBy:$ctrl.category">
                     <div class="card-body">
-                        <h3 class="card-title">{{kb.title
-                        }}</h3>
+                        <h3 class="card-title">{{kb.title}}</h3>
                         <h6 class="card-subtitle mb-2 text-muted">{{kb.subTitle}}</h6>
                         <p class="card-text">{{kb.text}}</p>
                         <ul ng-show="!kb.techStack.url">
                             <li ng-repeat="link in kb.links"><a class="card-link" href="{{link.url}}" target="_blank">{{link.title}}</a></li>
                         </ul>
-                        <p ng-show="kb.techStack.url">
-                            <a href="{{kb.techStack.url}}" class="btn btn-dark btn-sm">My knowledge of {{kb.title}}</a>
-                        </p>
+                        <ul ng-show="kb.techStack.url">
+                            <li>
+                                <i class="fa fa-code mr-1"></i>
+                                <a href="{{kb.techStack.url}}" class="card-link">So you wanna learn {{kb.title}}</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </div>
+
+
     </article>
 </div>

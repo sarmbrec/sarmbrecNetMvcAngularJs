@@ -20,63 +20,86 @@ a {
     color: darken($link-color, 10%);
     //text-decoration: $link-decoration;
 }
-
-
-
-
-
-body{
-
+.tab-pane {
+    background-color: $white;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 .5rem .5rem
+}
+body {
+    background-color: lighten($light, 1%);
+    /*background-color: lighten($light, 3%);*/
     /*font-size: 16px; ios force for form spacing*/
 }
 h1 {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     padding-bottom: .25rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid rgba($secondary,.25);
     text-transform: capitalize;
-    color: darken($primary, 10%);
+    /*color: darken($primary, 10%);*/
+    color: lighten($dark, 5%);
 }
-h2{
-    font-size: 1.25rem;
+h2 {
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+    color: lighten($dark, 10%);
 }
+h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: lighten($dark, 3%);
 
-
+    text-decoration: underline;
+}
+h4 {
+    font-size: .9rem;
+    color: lighten($dark, 20%);
+    font-weight: 400;
+}
 footer {
-    margin: 5rem 0 0 0;
-    padding: 1rem;
+    /*height: 100%;
+    min-height: 25vh;
+    max-height: 90vh;*/
+    text-align: center;
+    color: lighten($dark, 50%);
+    font-size: .7rem;
+    margin: 4rem 0 0 0;
+    padding: 1rem 2rem;
     border-top: 1px solid rgba($black,.15);
-    /*background-color: rgba($black,.5);*/
+    /*background-color: darken($light, 5%);*/
 }
-
-
-
+code {
+    display:block;
+    width:100%;
+    max-height: 250px;
+    overflow:auto;
+    border: 1px solid darken($light,15%);
+    border-radius: .25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: $white;
+}
 @include media-breakpoint-up(xs) {
     
 }
-
 @include media-breakpoint-up(sm) {
     
 }
-
 @include media-breakpoint-up(md) {
     
 }
-
 @include media-breakpoint-up(lg) {
     
 }
-
 @include media-breakpoint-up(xl) {
     
 }
-
 @include media-breakpoint-between(md, xl) {
     
 }
-
-
 
 /*@import url(https://fonts.googleapis.com/css?family=Comfortaa:200,300,400,700);
 $headings-font-family: Comfortaa;*/
@@ -157,3 +180,102 @@ $breadcrumb-active-color: $gray-500;*/
 /*.navbar-dark.bg-primary {
     background-color: #111111 !important;
 }*/
+
+
+
+
+
+
+
+
+
+/* installed brand fonts*/
+/*@font-face {
+    font-family: 'Lato-Bold';
+    src: url(/assets/fonts/Lato-Bold.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(/assets/fonts/Lato-Light.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(/assets/fonts/Lato-Regular.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url(/assets/fonts/Lato-Thin.ttf) format("truetype");
+    font-weight: 300;
+}*/
+/*reset*/
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+/*grid mobile first*/
+/*.container {
+    min-width: 320px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    display: block;
+    width: 96%;
+    margin: 2%;
+}*/
+/*brand the body*/
+/*body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 59px;
+    background-color: #f2f1ef;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}*/
+/* Extra Small Devices, Phones */
+/*@media only screen and (min-width : 480px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .col {
+        display: inline-block;
+        width: 46%;
+        margin: 0 2% 2% 0;
+    }
+
+    .col:nth-child(even) {
+        margin-right: 0;
+    }
+}*/
+/* Medium Devices, Desktops */
+/*@media only screen and (min-width : 992px) {
+    .col {
+        width: 23%;
+    }
+
+    .col:nth-child(even) {
+        margin-right: 2%;
+    }
+
+    .col:last-child {
+        margin-right: 0;
+    }
+}*/
+

@@ -42,10 +42,7 @@ namespace sarmbrecNetMvcAngularJs
 
             ));
 
-            bundles.Add(new ScriptBundle("~/bundles/phoneDetail").Include(
-                "~/Scripts/angularJsApp/phone-detail/phone-detail.module.js",
-                "~/Scripts/angularJsApp/phone-detail/phone-detail.component.js"
-            ));
+            
 
             bundles.Add(new ScriptBundle("~/bundles/header").Include(
                 "~/Scripts/angularJsApp/header/header.module.js",

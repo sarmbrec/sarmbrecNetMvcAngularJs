@@ -41,7 +41,20 @@
     <footer>@Html.Partial("_FooterPartial")</footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-
+    @*<script>
+        $(function () {
+            //alert('asdfdsf')
+            $('document').on('click', '#myTab a', function (e) {
+                alert('asdf')
+                console.log('hello')
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        })
+        //$(function () {
+        //    $('#myTab li:last-child a').tab('show')
+        //})
+    </script>*@
     @*@Scripts.Render("~/bundles/material-design-lite")*@
     @RenderSection("scripts", required: false)
 </body>
