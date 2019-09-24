@@ -62,9 +62,10 @@ body {
 
     #download-on-github{
         position: absolute;
-        right: 1.5rem;
-        top: 4rem;
+        right: 1rem;
+        top: 3.25rem;
         z-index: 10;
+        font-size: 2rem;
         a{
             color: $white;
         }
@@ -74,8 +75,10 @@ body {
 
 article#article-carousel {
     background-color: rgba(233, 236, 239, .5);
+
     section#section-carousel {
         margin-bottom: 1.5rem;
+
         .carousel-inner {
             height: 75vh;
             width: 100%;
@@ -93,6 +96,7 @@ article#article-carousel {
                 background-repeat: no-repeat;
                 border-top: 1px solid rgba(000, 000, 000, .6);
                 border-bottom: 1px solid rgba(000, 000, 000, .6);
+
                 &:after {
                     content: "";
                     display: block;
@@ -107,6 +111,7 @@ article#article-carousel {
                     background-image: linear-gradient(to bottom,rgba($primary, .7),rgba($primary, .3));
                     background-size: cover;
                 }
+
                 .carousel-caption {
                     position: absolute;
                     top: 10%;
@@ -124,14 +129,18 @@ article#article-carousel {
                     border: 1px solid rgba(233, 236, 239, .7);
                     border-radius: .25rem;
                     overflow: hidden;
-                    img.logo-techstack {                        
+
+                    img.logo-techstack {
                         width: 50%;
                         height: auto;
                         margin-bottom: 1rem;
                     }
-
                 }
             }
+        }
+
+        .carousel-control-next, .carousel-control-prev {
+            cursor: pointer;
         }
     }
 }
@@ -216,14 +225,30 @@ article #article-getting-started {
 
 @include media-breakpoint-up(md) {
 
+    body {
+        #download-on-github {
+            position: absolute;
+            right: 1.5rem;
+            top: 3rem;
+            z-index: 10;
+            font-size: 3rem;
+            a {
+                color: $white;
+            }
+        }
+    }
+
     article#article-carousel {
         background-color: rgba(233, 236, 239, .5);
+
         section#section-carousel {
             margin-bottom: 1.5rem;
+
             .carousel-inner {
                 height: 75vh;
                 width: 100%;
                 position: relative;
+
                 .carousel-item {
                     position: relative;
                     height: 100%;
@@ -236,6 +261,7 @@ article #article-getting-started {
                     background-repeat: no-repeat;
                     border-top: 1px solid rgba(000, 000, 000, .6);
                     border-bottom: 1px solid rgba(000, 000, 000, .6);
+
                     &:after {
                         content: "";
                         display: block;
@@ -250,6 +276,7 @@ article #article-getting-started {
                         background-image: linear-gradient(to bottom,rgba($primary, .7),rgba($primary, .3));
                         background-size: cover;
                     }
+
                     .carousel-caption {
                         position: absolute;
                         top: 15%;
@@ -265,6 +292,7 @@ article #article-getting-started {
                         background-size: cover;
                         border: 1px solid rgba(233, 236, 239, .7);
                         border-radius: .25rem;
+
                         img.logo-techstack {
                             width: 200px;
                             height: auto;

@@ -7067,9 +7067,10 @@ body {
     display: none !important; }
   body #download-on-github {
     position: absolute;
-    right: 1.5rem;
-    top: 4rem;
-    z-index: 10; }
+    right: 1rem;
+    top: 3.25rem;
+    z-index: 10;
+    font-size: 2rem; }
     body #download-on-github a {
       color: #fff; }
 
@@ -7127,6 +7128,8 @@ article#article-carousel {
             width: 50%;
             height: auto;
             margin-bottom: 1rem; }
+    article#article-carousel section#section-carousel .carousel-control-next, article#article-carousel section#section-carousel .carousel-control-prev {
+      cursor: pointer; }
 
 article#article-jumbotron section#section-jumbotron .jumbotron {
   padding: 2rem 1rem;
@@ -7169,6 +7172,14 @@ article #article-getting-started {
   display: none; }
 
 @media (min-width: 768px) {
+  body #download-on-github {
+    position: absolute;
+    right: 1.5rem;
+    top: 3rem;
+    z-index: 10;
+    font-size: 3rem; }
+    body #download-on-github a {
+      color: #fff; }
   article#article-carousel {
     background-color: rgba(233, 236, 239, 0.5); }
     article#article-carousel section#section-carousel {
