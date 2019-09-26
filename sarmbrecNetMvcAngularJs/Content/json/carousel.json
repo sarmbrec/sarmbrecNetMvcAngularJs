@@ -7,6 +7,7 @@
       "width": "",
       "height": ""
     },
+    "urlDetailView": "angularjs",
     "subTitle": "Superheroic JavaScript MVW Framework",
     "background": "/Content/images/backgrounds/beachhouse.jpg",
     "text": "What HTML would have been, had it been designed for building web-apps.",
@@ -45,6 +46,7 @@
       "width": "",
       "height": ""
     },
+    "urlDetailView": "",
     "subTitle": "Hypertext Markup Language",
     "background": "/Content/images/backgrounds/beachhousepelicans.jpg",
     "text": "The latest evolution of the standard that defines HTML",
@@ -79,6 +81,7 @@
       "width": "",
       "height": ""
     },
+    "urlDetailView": "",
     "subTitle": "Syntactically Awesome Style Sheets",
     "background": "/Content/images/backgrounds/beachhouse.jpg",
     "text": "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
@@ -98,6 +101,7 @@
       "width": "",
       "height": ""
     },
+    "urlDetailView": "",
     "subTitle": "Fun on a bun",
     "background": "/Content/images/backgrounds/floodedroad.jpg",
     "text": "A lightweight, interpreted, or just-in-time compiled programming language with first-class functions.",

@@ -24,12 +24,16 @@
                     //        return false;
                     //};
 
+                    self.showAngularJSTab = 'sarmbrec';
+                    self.ShowHideAngularJSTab = function (event) {
+                        //console.log('event.target.getAttribute = ', event.target.getAttribute('data-category'))
+                        self.showAngularJSTab = event.target.getAttribute('data-category');
+                    };
 
                     self.showTab = 'getting-started';
-
                     self.ShowHideTab = function (event) {
                         //console.log('event.target.getAttribute = ', event.target.getAttribute('data-category'))
-                        return self.showTab = event.target.getAttribute('data-category');
+                        self.showTab = event.target.getAttribute('data-category');
                     };
                 
 

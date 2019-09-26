@@ -15,6 +15,7 @@
                         <img class="logo-techstack" data-ng-src="{{item.logo.url}}" style="width:{{item.logo.width}};height:{{item.logo.height}};" alt="{{item.title}}" />
                         <h1 class="small text-muted">{{item.title}}</h1>
                         <p>{{item.text}}</p>
+                        <a data-ng-show="{{item.urlDetailView !== ''}}" href="#!/{{item.urlDetailView}}" class="mt-1 btn btn-outline-dark">Quick Start {{item.title}}</a>
                     </div>
                 </div>
             </div>
